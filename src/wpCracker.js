@@ -2,14 +2,14 @@ var system = require('system');
 var page = require('webpage').create();
 
 var url = 'login/wordpress/url';
-var passListDir = system.args[1];
+var passListPath = system.args[1];
 var passArray = [];
 var passArrIndex = 0;
 
 main();
 
 function main() {
-	readPassFile(passListDir);
+	readPassFile(passListPath);
 	initPage();
 }
 
